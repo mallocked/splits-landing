@@ -1,0 +1,23 @@
+{
+  "name": "splits-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mallocked/splits-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mallocked/splits-landing/issues"
+  },
+  "homepage": "https://github.com/mallocked/splits-landing#readme",
+  "devDependencies": {
+    "tailwindcss": "^2.2.17"
+  }
+}
