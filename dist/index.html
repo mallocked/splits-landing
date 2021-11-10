@@ -9,98 +9,96 @@
 </head>
 
 <body>
-  <header class="bg-mountain m-7">
-    <nav class=" flex flex-row justify-between">
-      <div class="logo">
-        <span></span>Sound Splits
+  <header class="bg-header-mobile bg-cover bg-no-repeat bg-top p-6">
+    <nav class="flex flex-row justify-between items-center">
+      <div class="text-white font-bold">
+        <span></span> Sound Splits
       </div>
-      <button class="btn">Join waitlist</button>
+      <button class="btn-blue border-white hover:border-white">Join waitlist</button>
     </nav>
 
     <div class="flex justify-center">
-      <h1 class="text-center text-3xl font-bold m-16">It's time to delete your spreadsheets.</h1>
+      <h1 class="text-center text-3xl font-bold my-24 text-white">It's time to delete your spreadsheets.</h1>
     </div>
   </header>
-  <main class="m-7">
-    <p>Accurately calculate and report royalties for all your publishers, artists and songwriters.</p>
+  <main class="m-7 mb-16">
+    <p class="text-center text-3xl text-gray-700">Accurately calculate and report royalties for all your publishers, artists and songwriters.</p>
   </main>
 
   <div class="m-7 border-2 py-5 px-6 rounded-xl border-blue border-solid">
     <p class="pb-3">Get in the know now, we’re launching soon.</p>
     <form>
       <input class="block border-2 rounded-md p-1 py-2 pl-2 border-blue-400 w-full mb-3" type="text" placeholder="Your email address">
-      <button class="block text-center bg-blue border-2 border-blue py-2 px-6 rounded-md w-full font-bold text-white" type="submit">Join waitlist</button>
+      <button class="btn-blue w-full" type="submit">Join waitlist</button>
     </form>
   </div>
 
-  <aside>
-    <div>
-      <img src="./assets/artist-spotlight.jpg" alt="artist at soundboard">
-    </div>
-    <div>
+  <aside class="mt-16 flex bg-blue-blob bg-no-repeat bg-contain bg-center">
+    <img class="shadow-lg flex-grow" src="./assets/artist-spotlight.jpg" alt="artist at soundboard">
+    <div class="pl-5 mr-4">
       <p class="font-bold">Label spotlight</p>
-      <P>United Pursuit Records dealt with convoluted spreadsheet solutions for over a decade before finding that Sound
-        Splits
-        was a perfect match.</P>
+      <P>United Pursuit Records dealt with convoluted spreadsheet solutions for over a decade before finding that Sound Splits was a perfect match.</P>
     </div>
   </aside>
-  <article>
-    <h2>How it works</h2>
-    <p>Sound Splits makes royalty accounting straight forward.</p>
+  <article class="mt-32">
+    <h2 class="mx-7 text-center mb-3 font-bold text-2xl">How it works</h2>
+    <p class="text-center mx-7">Sound Splits makes royalty accounting straight forward.</p>
 
-    <div>
+    <div class="m-16">
       <picture>
         <img src="./assets/how-it-works-lady.svg" alt="woman at desk">
       </picture>
-      <h3 class="font-bold">Add your catalog</h3>
+      <h3 class="font-bold text-xl pb-1">Add your catalog</h3>
       <p>Add and manage your catalog of songs and albums, then add ownership splits for publishing and masters.</p>
     </div>
 
-    <div>
+    <div class="m-16">
       <picture>
         <img src="./assets/how-it-works-man.svg" alt="man at computer displaying charts">
       </picture>
-      <h3 class="font-bold">Import sales data</h3>
+      <h3 class="font-bold text-xl pb-1">Import sales data</h3>
       <p>Import your sales data from all your sales channels like Spotify, Tunecore, AppleMusic and more.</p>
     </div>
 
-    <div>
+    <div class="m-16">
       <picture>
         <img src="./assets/how-it-works-yoga.svg" alt="woman on yoga mat with computer">
       </picture>
-      <h3 class="font-bold">Create beautiful reports</h3>
+      <h3 class="font-bold text-xl pb-1">Create beautiful reports</h3>
       <p>Let Sound Splits do the hard work of calculating royalties for all your sales by generating royalty reports.
       </p>
     </div>
   </article>
-  <article>
-    <h2>Screenshots</h2>
+  <article class="mx-7 text-center mt-32">
+    <h2 class=" mb-3 font-bold text-2xl">Screenshots</h2>
     <p>Take a look at Sound Splits in action</p>
     <div>
       {{ Image Gallery }}
-      <div class="inline rounded-full p-2 bg-blue max-h-1 max-w-1"><span class="sr-only">1</span></div>
+      <div class=""><span class="sr-only">1</span></div>
       <div class=""><span class="sr-only">2</span></div>
       <div class=""><span class="sr-only">3</span></div>
     </div>
   </article>
-  <article>
-    <h2>Pricing</h2>
+  <article class="text-center mx-7 mt-32">
+    <h2 class="mb-3 font-bold text-2xl">Pricing</h2>
     <p>Free... Unless you’re wrecking our servers!</p>
 
     <!-- Pricing card -->
-    <div>
-      <h3>Sound Splits is free to use up to 1 million monthly imported sales units.</h3>
+    <div class="my-7 border-2 py-5 px-6 rounded-xl border-blue border-solid">
+      <h3 class="font-bold text-2xl">Sound Splits is free to use up to 1 million monthly imported sales units.</h3>
+      <div class="border-solid border-t w-4/5 border-gray-400 m-auto my-7"></div>
+
       <p>Plan on processing more than that? You better contact our sales team</p>
-      <button class="">Contact sales</button>
+      <button class="btn-blue mt-7 w-full font-normal">Contact sales</button>
     </div>
   </article>
 
-  <article>
-    <h2>Meet the team</h2>
+  <article class="mx-7 text-center mt-32 z-0">
+    <h2 class="m-7 text-center mb-3 font-bold text-2xl">Meet the team</h2>
     <p>Sound Splits is built and maintained by Mallocked, LLC. A software company created by passionate,
       musicly-inclined
       developers.</p>
-    <div>
+    <div class="flex justify-around m-5 mt-10">
       <picture>
         <img src="./assets/james.jpg" alt="James, principle backend developer">
       </picture>
@@ -109,14 +107,16 @@
       </picture>
     </div>
   </article>
-  <footer>
-    <a href="#">Join waitlist</a>
-    <a href="#">Sign in</a>
-    <div class="border-solid border-t-2 w-full"></div>
-    <div class=" logo">
-      <span>{{ icon }}</span> Sound Splits
+  <footer class="pt-36 z-50 text-center text-white mt-14 bg-footer-mobile bg-cover bg-bottom">
+    <div class="pb-24">
+      <a class="block" href="#">Join waitlist</a>
+      <a class="block" href="#">Sign in</a>
+      <div class="border-solid border-t-4 w-1/4 m-auto my-8"></div>
+      <div class="logo">
+        <span>{{ icon }}</span> Sound Splits
+      </div>
     </div>
-    <div class="flex flex-row justify-evenly">
+    <div class="flex flex-row justify-evenly text-xs py-6">
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
       <a href="#">2021 Mallocked, LLC</a>
