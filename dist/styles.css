@@ -635,26 +635,38 @@ video {
 }
 
 .btn-blue {
-  border-radius: 0.5rem;
+  border-radius: 0.375rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(24, 114, 228, var(--tw-border-opacity));
+}
+
+.btn-blue:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(133, 215, 255, var(--tw-border-opacity));
+}
+
+.btn-blue {
   --tw-bg-opacity: 1;
   background-color: rgba(24, 114, 228, var(--tw-bg-opacity));
 }
 
 .btn-blue:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(0, 158, 235, var(--tw-bg-opacity));
+  background-color: rgba(133, 215, 255, var(--tw-bg-opacity));
 }
 
 .btn-blue {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-weight: 600;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgba(133, 215, 255, var(--tw-text-opacity));
-  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .btn-blue:focus {
@@ -17987,6 +17999,22 @@ video {
 
 .bg-gradient-to-tl {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-blue-blob {
+  background-image: url('./assets/artist-spotlight-blob.png');
+}
+
+.bg-header-mobile {
+  background-image: url('./assets/bg-header-mobile.png');
+}
+
+.bg-footer-mobile {
+  background-image: url('./assets/bg-footer-mobile.png');
+}
+
+.bg-footer-mobile-svg {
+  background-image: url('./assets/footer.svg');
 }
 
 .from-transparent {
@@ -50109,6 +50137,22 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:bg-blue-blob {
+    background-image: url('./assets/artist-spotlight-blob.png');
+  }
+
+  .sm\:bg-header-mobile {
+    background-image: url('./assets/bg-header-mobile.png');
+  }
+
+  .sm\:bg-footer-mobile {
+    background-image: url('./assets/bg-footer-mobile.png');
+  }
+
+  .sm\:bg-footer-mobile-svg {
+    background-image: url('./assets/footer.svg');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -81863,6 +81907,22 @@ video {
 
   .md\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .md\:bg-blue-blob {
+    background-image: url('./assets/artist-spotlight-blob.png');
+  }
+
+  .md\:bg-header-mobile {
+    background-image: url('./assets/bg-header-mobile.png');
+  }
+
+  .md\:bg-footer-mobile {
+    background-image: url('./assets/bg-footer-mobile.png');
+  }
+
+  .md\:bg-footer-mobile-svg {
+    background-image: url('./assets/footer.svg');
   }
 
   .md\:from-transparent {
@@ -113621,6 +113681,22 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-blue-blob {
+    background-image: url('./assets/artist-spotlight-blob.png');
+  }
+
+  .lg\:bg-header-mobile {
+    background-image: url('./assets/bg-header-mobile.png');
+  }
+
+  .lg\:bg-footer-mobile {
+    background-image: url('./assets/bg-footer-mobile.png');
+  }
+
+  .lg\:bg-footer-mobile-svg {
+    background-image: url('./assets/footer.svg');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -145377,6 +145453,22 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-blue-blob {
+    background-image: url('./assets/artist-spotlight-blob.png');
+  }
+
+  .xl\:bg-header-mobile {
+    background-image: url('./assets/bg-header-mobile.png');
+  }
+
+  .xl\:bg-footer-mobile {
+    background-image: url('./assets/bg-footer-mobile.png');
+  }
+
+  .xl\:bg-footer-mobile-svg {
+    background-image: url('./assets/footer.svg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -177131,6 +177223,22 @@ video {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-blue-blob {
+    background-image: url('./assets/artist-spotlight-blob.png');
+  }
+
+  .\32xl\:bg-header-mobile {
+    background-image: url('./assets/bg-header-mobile.png');
+  }
+
+  .\32xl\:bg-footer-mobile {
+    background-image: url('./assets/bg-footer-mobile.png');
+  }
+
+  .\32xl\:bg-footer-mobile-svg {
+    background-image: url('./assets/footer.svg');
   }
 
   .\32xl\:from-transparent {
