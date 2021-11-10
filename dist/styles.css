@@ -680,6 +680,36 @@ video {
   --tw-ring-opacity: 0.75;
 }
 
+.dot-indicators>* {
+  margin-right: 0.25rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(24, 114, 228, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.25;
+}
+
+.dot-indicators>*:hover {
+  --tw-bg-opacity: 0.5;
+}
+
+.dot-indicators>*:focus {
+  --tw-bg-opacity: 0.5;
+}
+
+.dot-indicators>* {
+  padding: 0.5rem;
+  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.dot-indicators>*[aria-selected="true"] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(24, 114, 228, var(--tw-bg-opacity));
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

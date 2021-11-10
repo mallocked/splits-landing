@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sound Splits - SaaS Royalty accounting for indie labels and publishers</title>
   <link href="./styles.css" rel="stylesheet">
+  <script defer src="tabs.js"></script>
 </head>
 
 <body>
@@ -22,13 +23,15 @@
     </div>
   </header>
   <main class="m-7 mb-16">
-    <p class="text-center text-3xl text-gray-700">Accurately calculate and report royalties for all your publishers, artists and songwriters.</p>
+    <p class="text-center text-2xl text-gray-700">Accurately calculate and report royalties for all your publishers,
+      artists and songwriters.</p>
   </main>
 
   <div class="m-7 border-2 py-5 px-6 rounded-xl border-blue border-solid">
     <p class="pb-3">Get in the know now, we’re launching soon.</p>
     <form>
-      <input class="block border-2 rounded-md p-1 py-2 pl-2 border-blue-400 w-full mb-3" type="text" placeholder="Your email address">
+      <input class="block border-2 rounded-md p-1 py-2 pl-2 border-blue-400 w-full mb-3" type="text"
+        placeholder="Your email address">
       <button class="btn-blue w-full" type="submit">Join waitlist</button>
     </form>
   </div>
@@ -37,7 +40,8 @@
     <img class="shadow-lg flex-grow" src="./assets/artist-spotlight.jpg" alt="artist at soundboard">
     <div class="pl-5 mr-4">
       <p class="font-bold">Label spotlight</p>
-      <P>United Pursuit Records dealt with convoluted spreadsheet solutions for over a decade before finding that Sound Splits was a perfect match.</P>
+      <P>United Pursuit Records dealt with convoluted spreadsheet solutions for over a decade before finding that Sound
+        Splits was a perfect match.</P>
     </div>
   </aside>
   <article class="mt-32">
@@ -46,7 +50,7 @@
 
     <div class="m-16">
       <picture>
-        <img src="./assets/how-it-works-lady.svg" alt="woman at desk">
+        <img src="./assets/how-it-works-woman.png" alt="woman at desk">
       </picture>
       <h3 class="font-bold text-xl pb-1">Add your catalog</h3>
       <p>Add and manage your catalog of songs and albums, then add ownership splits for publishing and masters.</p>
@@ -54,7 +58,7 @@
 
     <div class="m-16">
       <picture>
-        <img src="./assets/how-it-works-man.svg" alt="man at computer displaying charts">
+        <img src="./assets/how-it-works-man.png" alt="man at computer displaying charts">
       </picture>
       <h3 class="font-bold text-xl pb-1">Import sales data</h3>
       <p>Import your sales data from all your sales channels like Spotify, Tunecore, AppleMusic and more.</p>
@@ -62,29 +66,79 @@
 
     <div class="m-16">
       <picture>
-        <img src="./assets/how-it-works-yoga.svg" alt="woman on yoga mat with computer">
+        <img src="./assets/how-it-works-yoga.png" alt="woman on yoga mat with computer">
       </picture>
       <h3 class="font-bold text-xl pb-1">Create beautiful reports</h3>
       <p>Let Sound Splits do the hard work of calculating royalties for all your sales by generating royalty reports.
       </p>
     </div>
   </article>
-  <article class="mx-7 text-center mt-32">
-    <h2 class=" mb-3 font-bold text-2xl">Screenshots</h2>
-    <p>Take a look at Sound Splits in action</p>
-    <div>
-      {{ Image Gallery }}
-      <div class=""><span class="sr-only">1</span></div>
-      <div class=""><span class="sr-only">2</span></div>
-      <div class=""><span class="sr-only">3</span></div>
+  <article class="text-center mt-32 flex flex-col items-center">
+
+    <h2 class="mb-3 font-bold text-2xl">Screenshots</h2>
+    <p class="mx-7 mb-10">Take a look at Sound Splits in action</p>
+
+    <div class="p-7 mb-3 bg-blue bg-opacity-5 border-t-2 border-b-2 border-blue">
+      <!-- Tab Panels -->
+      <div role="tabpanel" id="screenshot1-tab">
+        <div class="flex flex-row justify-evenly">
+          <img src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard">
+          <div class="text-left ml-6 self-center">
+            <h4 class="font-bold text-lg">Account dashboard</h4>
+            <p class="text-sm">Glimpse recent revenue, reports and statements</p>
+          </div>
+        </div>
+      </div>
+
+      <div hidden id="screenshot2-tab" role="tabpanel">
+        <div class="flex flex-row justify-evenly">
+          <img src="./assets/screenshot2.jpg" alt="Sound Splits user dashboard">
+          <div class="text-left ml-6 self-center">
+            <h4 class="font-bold text-lg">Upsidedown world</h4>
+            <p class="text-sm">Glimpse the underworld in this epic saga</p>
+          </div>
+        </div>
+      </div>
+
+      <div hidden role="tabpanel" id="screenshot3-tab">
+        <div class="flex flex-row justify-evenly">
+          <img src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard">
+          <div class="text-left ml-6 self-center">
+            <h4 class="font-bold text-lg">Third is an option</h4>
+            <p class="text-sm">A third way to live is a middle road of the ways</p>
+          </div>
+        </div>
+      </div>
+
+      <div hidden id="screenshot4-tab" role="tabpanel">
+        <div class="flex flex-row justify-evenly">
+          <img src="./assets/screenshot2.jpg" alt="Sound Splits user dashboard">
+          <div class="text-left ml-6 self-center">
+            <h4 class="font-bold text-lg">Fourth is the charm</h4>
+            <p class="text-sm">This world just can't get anymore repeated!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div role="tablist" class="dot-indicators flex" aria-label="screenshot gallery selector list">
+      <button role="tab" tabindex="0" aria-selected="true" aria-controls="screenshot1-tab"><span
+          class="sr-only">Screenshot 1</span></button>
+      <button role="tab" tabindex="0" aria-selected="false" aria-controls="screenshot2-tab"><span
+          class="sr-only">Screenshot 2</span></button>
+      <button role="tab" tabindex="0" aria-selected="false" aria-controls="screenshot3-tab"><span
+          class="sr-only">Screenshot 3</span></button>
+      <button role="tab" class="mr-0" tabindex="0" aria-selected="false" aria-controls="screenshot4-tab"><span
+          class="sr-only">Screenshot 4</span></button>
     </div>
   </article>
   <article class="text-center mx-7 mt-32">
     <h2 class="mb-3 font-bold text-2xl">Pricing</h2>
-    <p>Free... Unless you’re wrecking our servers!</p>
+    <p class="mb-10">Free... Unless you’re wrecking our servers!</p>
 
     <!-- Pricing card -->
-    <div class="my-7 border-2 py-5 px-6 rounded-xl border-blue border-solid">
+    <div class="border-2 py-5 px-6 rounded-xl border-blue border-solid">
       <h3 class="font-bold text-2xl">Sound Splits is free to use up to 1 million monthly imported sales units.</h3>
       <div class="border-solid border-t w-4/5 border-gray-400 m-auto my-7"></div>
 
@@ -95,15 +149,15 @@
 
   <article class="mx-7 text-center mt-32 z-0">
     <h2 class="m-7 text-center mb-3 font-bold text-2xl">Meet the team</h2>
-    <p>Sound Splits is built and maintained by Mallocked, LLC. A software company created by passionate,
+    <p class="mb-10">Sound Splits is built and maintained by Mallocked, LLC. A software company created by passionate,
       musicly-inclined
       developers.</p>
-    <div class="flex justify-around m-5 mt-10">
+    <div class="flex justify-around m-5">
       <picture>
-        <img src="./assets/james.jpg" alt="James, principle backend developer">
+        <img class="rounded-full border-4 border-white shadow-md hover:opacity-90" src="./assets/meet-the-team-james.png" alt="James, principle backend developer">
       </picture>
       <picture>
-        <img src="./assets/michael.jpg" alt="Michael, principle frontend developer">
+        <img class="rounded-full border-4 border-white shadow-md ml-4 hover:opacity-90" src="./assets/meet-the-team-michael.png" alt="Michael, principle frontend developer">
       </picture>
     </div>
   </article>
