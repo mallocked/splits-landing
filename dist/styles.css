@@ -18035,16 +18035,12 @@ video {
   background-image: url('./assets/artist-spotlight-blob.png');
 }
 
-.bg-header-mobile {
-  background-image: url('./assets/bg-header-mobile.png');
+.bg-header {
+  background-image: url('./assets/bg-header.svg');
 }
 
-.bg-footer-mobile {
-  background-image: url('./assets/bg-footer-mobile.png');
-}
-
-.bg-footer-mobile-svg {
-  background-image: url('./assets/footer.svg');
+.bg-footer {
+  background-image: url('./assets/bg-footer.svg');
 }
 
 .from-transparent {
@@ -50171,16 +50167,12 @@ video {
     background-image: url('./assets/artist-spotlight-blob.png');
   }
 
-  .sm\:bg-header-mobile {
-    background-image: url('./assets/bg-header-mobile.png');
+  .sm\:bg-header {
+    background-image: url('./assets/bg-header.svg');
   }
 
-  .sm\:bg-footer-mobile {
-    background-image: url('./assets/bg-footer-mobile.png');
-  }
-
-  .sm\:bg-footer-mobile-svg {
-    background-image: url('./assets/footer.svg');
+  .sm\:bg-footer {
+    background-image: url('./assets/bg-footer.svg');
   }
 
   .sm\:from-transparent {
@@ -81943,16 +81935,12 @@ video {
     background-image: url('./assets/artist-spotlight-blob.png');
   }
 
-  .md\:bg-header-mobile {
-    background-image: url('./assets/bg-header-mobile.png');
+  .md\:bg-header {
+    background-image: url('./assets/bg-header.svg');
   }
 
-  .md\:bg-footer-mobile {
-    background-image: url('./assets/bg-footer-mobile.png');
-  }
-
-  .md\:bg-footer-mobile-svg {
-    background-image: url('./assets/footer.svg');
+  .md\:bg-footer {
+    background-image: url('./assets/bg-footer.svg');
   }
 
   .md\:from-transparent {
@@ -113715,16 +113703,12 @@ video {
     background-image: url('./assets/artist-spotlight-blob.png');
   }
 
-  .lg\:bg-header-mobile {
-    background-image: url('./assets/bg-header-mobile.png');
+  .lg\:bg-header {
+    background-image: url('./assets/bg-header.svg');
   }
 
-  .lg\:bg-footer-mobile {
-    background-image: url('./assets/bg-footer-mobile.png');
-  }
-
-  .lg\:bg-footer-mobile-svg {
-    background-image: url('./assets/footer.svg');
+  .lg\:bg-footer {
+    background-image: url('./assets/bg-footer.svg');
   }
 
   .lg\:from-transparent {
@@ -145487,16 +145471,12 @@ video {
     background-image: url('./assets/artist-spotlight-blob.png');
   }
 
-  .xl\:bg-header-mobile {
-    background-image: url('./assets/bg-header-mobile.png');
+  .xl\:bg-header {
+    background-image: url('./assets/bg-header.svg');
   }
 
-  .xl\:bg-footer-mobile {
-    background-image: url('./assets/bg-footer-mobile.png');
-  }
-
-  .xl\:bg-footer-mobile-svg {
-    background-image: url('./assets/footer.svg');
+  .xl\:bg-footer {
+    background-image: url('./assets/bg-footer.svg');
   }
 
   .xl\:from-transparent {
@@ -177259,16 +177239,12 @@ video {
     background-image: url('./assets/artist-spotlight-blob.png');
   }
 
-  .\32xl\:bg-header-mobile {
-    background-image: url('./assets/bg-header-mobile.png');
+  .\32xl\:bg-header {
+    background-image: url('./assets/bg-header.svg');
   }
 
-  .\32xl\:bg-footer-mobile {
-    background-image: url('./assets/bg-footer-mobile.png');
-  }
-
-  .\32xl\:bg-footer-mobile-svg {
-    background-image: url('./assets/footer.svg');
+  .\32xl\:bg-footer {
+    background-image: url('./assets/bg-footer.svg');
   }
 
   .\32xl\:from-transparent {
