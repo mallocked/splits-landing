@@ -17,9 +17,8 @@ module.exports = {
       },
       backgroundImage: {
         'blue-blob': "url('./assets/artist-spotlight-blob.png')",
-        'header-mobile': "url('./assets/bg-header-mobile.png')",
-        'footer-mobile': "url('./assets/bg-footer-mobile.png')",
-        'footer-mobile-svg': "url('./assets/footer.svg')"
+        'header': "url('./assets/bg-header.svg')",
+        'footer': "url('./assets/bg-footer.svg')"
       }
     },
   },
