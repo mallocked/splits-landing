@@ -5,5 +5,11 @@
 @layer components {
   .btn-blue {
     @apply text-center bg-blue border-2 border-blue py-2 px-6 rounded-md font-bold text-white text-sm hover:border-blue-light hover:bg-blue-light focus:outline-none focus:ring-2 focus:ring-blue-light focus:ring-opacity-75;
+  },
+  .dot-indicators>* {
+    @apply cursor-pointer rounded-full w-2 h-2 p-2 mr-1 bg-blue bg-opacity-25 shadow-inner hover:bg-opacity-50 focus:bg-opacity-50;
+  },
+  .dot-indicators>*[aria-selected="true"] {
+    @apply bg-blue;
   }
 }
