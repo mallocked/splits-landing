@@ -7,6 +7,7 @@
     // if a tab is clicked, find its corrisponding panel using event delegation
     let btn = e.target.closest('button')
     if (!btn) return;
+    
     let tabToShow = btn.getAttribute('aria-controls');
     if (!tabToShow) return;
 
