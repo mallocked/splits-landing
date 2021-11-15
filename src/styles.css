@@ -13,3 +13,12 @@
     @apply bg-blue;
   }
 }
+
+.tool-tip {
+  transition: opacity 150ms ease-in-out;
+  max-width: 150px;
+}
+
+img:hover ~ .tool-tip {
+  opacity: 100;
+}
