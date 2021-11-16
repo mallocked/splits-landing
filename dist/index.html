@@ -17,9 +17,26 @@
       </div>
       <button class="btn-blue global-focus global-hover border-white hover:border-white">+Waitlist</button>
     </nav>
-
-    <div class="flex justify-center">
-      <h1 class="text-center text-3xl font-bold my-16 m-2 mx-5 text-white">It's time to delete your spreadsheets.</h1>
+    <div class="flex lg:flex-row items-center lg:items-start lg:justify-center lg:gap-9">
+      <div class="hidden lg:block">
+        <img src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard">
+      </div>
+      <div class="w-full lg:max-w-sm">
+        <h1 class="lg:text-4xl lg:pb-4 lg:text-left lg:w-full lg:my-0 lg:m-0 my-16 m-2 text-center text-3xl md:text-4xl font-bold sm:mx-36 text-white">It's time to delete your spreadsheets.</h1>
+            <p class="text-xl text-white hidden lg:inline ">Accurately calculate and report royalties for all your
+              publishers, artists and songwriters using a single powerful tool.</p>
+                <div class="hidden pt-4 pb-7 lg:flex flex-col">
+                  <div class="py-5 max-w-sm">
+                    <p class="font-bold pb-2 text-white self-stretch">Join the waitlist, we’re launching soon.</p>
+                    <form>
+                      <input
+                        class="block outline-none focus:ring-4 focus:ring-blue-100 border-2 rounded-md p-1 py-2 pl-2 border-blue-400 w-full mb-3"
+                        type="text" placeholder="Your email address">
+                      <button class="btn-blue global-focus global-hover w-full" type="submit">Join waitlist</button>
+                    </form>
+                  </div>
+                </div>
+      </div>
     </div>
     <!-- Alternate Curve Option -->
     <!-- <svg viewBox="0 0 390 90" fill="#fff" xmlns="http://www.w3.org/2000/svg">
@@ -32,12 +49,12 @@
         fill="white" />
     </svg>
   </header>
-  <main class="m-7 mt-8 mb-20 flex flex-col items-center">
+  <main class="m-7 mt-8 mb-20 flex flex-col items-center lg:hidden">
     <p class="text-center text-2xl text-gray-700 max-w-md">Accurately calculate and report royalties for all your publishers,
       artists and songwriters.</p>
   </main>
 
-  <div class="flex flex-col m-7 items-center">
+  <div class="lg:hidden flex flex-col m-7 items-center">
     <div class="border-2 py-5 max-w-md px-6 rounded-xl border-blue border-solid">
       <p class="pb-3  self-stretch">Get in the know now, we’re launching soon.</p>
       <form>
@@ -70,11 +87,11 @@
         <img src="./assets/how-it-works-woman.png" alt="woman at desk">
       </picture>
       <h3 class="font-bold text-xl py-2">Add your catalog</h3>
-      <p class="mb-28">Add and manage your catalog of songs and albums, then add ownership splits for publishing and
+      <p class="mb-28 lg:mb-40 lg:max-w-xl">Add and manage your catalog of songs and albums, then add ownership splits for publishing and
         masters.</p>
     </div>
 
-    <div class="self-stretch flex flex-col items-center px-7 my-20">
+    <div class="self-stretch flex flex-col items-center px-7 my-20 lg:mb-16 lg:mt-12">
       <picture>
         <img src="./assets/how-it-works-man.png" alt="man at computer displaying charts">
       </picture>
@@ -86,8 +103,8 @@
       <picture>
         <img src="./assets/how-it-works-yoga.png" alt="woman on yoga mat with computer">
       </picture>
-      <h3 class="font-bold text-xl py-2">Create beautiful reports</h3>
-      <p class="mb-28">Let Sound Splits do the hard work of calculating royalties for all your sales by generating
+      <h3 class="font-bold text-xl py-4">Create beautiful reports</h3>
+      <p class="mb-28 lg:mb-40 lg:max-w-xl">Let Sound Splits do the hard work of calculating royalties for all your sales by generating
         royalty reports.
       </p>
     </div>
