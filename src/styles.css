@@ -22,3 +22,19 @@
 img:hover ~ .tool-tip {
   opacity: 100;
 }
+
+.color-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.color-bg::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 16rem;
+  top: 120px;
+  z-index: -1;
+  background-color: rgba(110, 104, 202, 0.05);
+  transform: rotate(-6.12deg);
+}
