@@ -18,6 +18,7 @@ module.exports = {
       backgroundImage: {
         'blue-blob': "url('./assets/artist-spotlight-blob.png')",
         'header': "url('./assets/bg-header.svg')",
+        'header-lg': "url('./assets/bg-header-lg.svg')",
         'footer': "url('./assets/bg-footer.svg')"
       }
     },

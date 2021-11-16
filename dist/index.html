@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="bg-header bg-cover bg-no-repeat bg-center">
+  <header class="bg-header lg:bg-header-lg bg-cover bg-no-repeat bg-center lg:bg-left-top">
     <nav class="flex flex-row p-6 justify-evenly items-center">
       <div class="text-white font-bold">
         <img class="sm:w-2/4 w-4/6" src="./assets/ss-logo-full.svg" alt="sound splits company logo">
@@ -59,12 +59,12 @@
     <h2 class="mx-7 text-center mb-3 font-bold text-2xl">How it works</h2>
     <p class="text-center mx-7">Sound Splits makes royalty accounting straight forward.</p>
 
-    <div class="self-stretch m-16">
+    <div class="color-bg flex flex-col items-center pt-16 self-stretch">
       <picture>
         <img src="./assets/how-it-works-woman.png" alt="woman at desk">
       </picture>
       <h3 class="font-bold text-xl pb-1">Add your catalog</h3>
-      <p>Add and manage your catalog of songs and albums, then add ownership splits for publishing and masters.</p>
+      <p class="max-w-xs mb-28">Add and manage your catalog of songs and albums, then add ownership splits for publishing and masters.</p>
     </div>
 
     <div class="self-stretch m-16">
@@ -93,7 +93,7 @@
       <!-- Tab Panels -->
       <div role="tabpanel" id="screenshot1-tab">
         <div class="flex flex-row justify-evenly">
-          <div><img  src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard"></div>
+          <div><img src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard"></div>
           <div class=" text-left ml-6 self-center">
             <h4 class="font-bold text-lg">Account dashboard</h4>
             <p class="text-sm">Glimpse recent revenue, reports and statements</p>
@@ -167,16 +167,16 @@
       <picture class="flex flex-col justify-center m-1">
         <img class="rounded-full border-4 border-white shadow-md hover:opacity-90 cursor-pointer"
           src="./assets/meet-the-team-james.png" alt="James, principle backend developer">
-          <p class="tool-tip text-sm mt-4 p-2 rounded-md text-white opacity-0 inline bg-black bg-opacity-50 shadow-md">
-            James, principle back end developer
-          </p>
+        <p class="tool-tip text-sm mt-4 p-2 rounded-md text-white opacity-0 inline bg-black bg-opacity-50 shadow-md">
+          James, principle back end developer
+        </p>
       </picture>
       <picture class="flex flex-col justify-center m-1">
         <img class="rounded-full border-4 border-white shadow-md hover:opacity-90 cursor-pointer"
           src="./assets/meet-the-team-michael.png" alt="Michael, principle frontend developer">
-          <p class="tool-tip text-sm mt-4 p-2 rounded-md text-white opacity-0 inline bg-black bg-opacity-50 shadow-md">
-            Michael, principle front end developer
-          </p>
+        <p class="tool-tip text-sm mt-4 p-2 rounded-md text-white opacity-0 inline bg-black bg-opacity-50 shadow-md">
+          Michael, principle front end developer
+        </p>
 
       </picture>
     </div>
