@@ -13,6 +13,14 @@ module.exports = {
           light: '#85d7ff',
           DEFAULT: '#1872E4',
           dark: '#009eeb',
+          tenPercent: 'rgba(24, 114, 228, 0.10)',
+          fivePercent: 'rgba(24, 114, 228, 0.05)',
+        },
+        purple: {
+          fivePercent: 'rgba(113, 106, 202, 0.05)',
+        },
+        green: {
+          fivePercent: 'rgba(16, 120, 85, 0.05)',
         }
       },
       backgroundImage: {
@@ -24,7 +32,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['odd'],
+      backgroundColor: ['even']
+    },
   },
   plugins: [],
 }
