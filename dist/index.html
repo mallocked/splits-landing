@@ -114,51 +114,51 @@
     <h2 class="mb-3 font-bold text-2xl">Screenshots</h2>
     <p class="mx-7 mb-10">Take a look at Sound Splits in action</p>
 
-    <div class="p-6 mb-3 bg-blue bg-opacity-5 border-t-2 border-b-2 border-blue">
+    <div id="imageContainer" class="p-6 mb-3 bg-blue bg-opacity-5 border-t-2 border-b-2 border-blue">
       <!-- Tab Panels -->
       <div role="tabpanel" id="screenshot1-tab">
         <div class="flex flex-row justify-evenly">
-          <div><img src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard"></div>
+          <div><img class="pointer-events-none" src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard"></div>
           <div class="flex-1 text-left ml-6 self-center">
-            <h4 class="font-bold text-lg">Account dashboard</h4>
-            <p class="text-sm">Glimpse recent revenue, reports and statements</p>
+            <h4 class="font-bold text-lg select-none">Account dashboard</h4>
+            <p class="text-sm select-none">Glimpse recent revenue, reports and statements</p>
           </div>
         </div>
       </div>
 
       <div hidden id="screenshot2-tab" role="tabpanel">
         <div class="flex flex-row justify-evenly">
-          <div><img src="./assets/screenshot2.jpg" alt="Sound Splits user dashboard"></div>
+          <div><img class="pointer-events-none" src="./assets/screenshot2.jpg" alt="Sound Splits user dashboard"></div>
           <div class="flex-1 text-left ml-6 self-center">
-            <h4 class="font-bold text-lg">Upsidedown world</h4>
-            <p class="text-sm">Glimpse the underworld in this epic saga</p>
+            <h4 class="font-bold text-lg select-none">Upsidedown world</h4>
+            <p class="text-sm select-none">Glimpse the underworld in this epic saga</p>
           </div>
         </div>
       </div>
 
       <div hidden role="tabpanel" id="screenshot3-tab">
         <div class="flex flex-row justify-evenly">
-          <div><img src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard"></div>
+          <div><img class="pointer-events-none" src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard"></div>
           <div class="flex-1 text-left ml-6 self-center">
-            <h4 class="font-bold text-lg">Third is an option</h4>
-            <p class="text-sm">A third way to live is a middle road of the ways</p>
+            <h4 class="font-bold text-lg select-none">Third is an option</h4>
+            <p class="text-sm select-none">A third way to live is a middle road of the ways</p>
           </div>
         </div>
       </div>
 
       <div hidden id="screenshot4-tab" role="tabpanel">
         <div class="flex flex-row justify-evenly">
-          <div><img src="./assets/screenshot2.jpg" alt="Sound Splits user dashboard"></div>
+          <div><img class="pointer-events-none" src="./assets/screenshot2.jpg" alt="Sound Splits user dashboard"></div>
           <div class="flex-1 text-left ml-6 self-center">
-            <h4 class="font-bold text-lg">Fourth is the charm</h4>
-            <p class="text-sm">This world just can't get anymore repeated!</p>
+            <h4 class="font-bold text-lg select-none">Fourth is the charm</h4>
+            <p class="text-sm select-none">This world just can't get anymore repeated!</p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Tabs -->
-    <div role="tablist" class="dot-indicators flex global-focus" aria-label="screenshot gallery selector list">
+    <div id="imageTabs" role="tablist" class="dot-indicators flex global-focus" aria-label="screenshot gallery selector list">
       <button role="tab" tabindex="0" aria-selected="true" aria-controls="screenshot1-tab"><span
           class="sr-only">Screenshot 1</span></button>
       <button role="tab" tabindex="0" aria-selected="false" aria-controls="screenshot2-tab"><span
@@ -169,15 +169,14 @@
           class="sr-only">Screenshot 4</span></button>
     </div>
   </article>
+  
   <article class="text-center mx-7 mt-36 flex flex-col items-center">
     <h2 class="mb-3 font-bold text-2xl">Pricing</h2>
     <p class="mb-10">Free... Unless you’re wrecking our servers!</p>
-
     <!-- Pricing card -->
     <div class="border-2 py-5 px-6 rounded-xl border-blue border-solid max-w-sm">
       <h3 class="font-bold text-2xl">Sound Splits is free to use up to 1 million monthly imported sales units.</h3>
       <div class="border-solid border-t w-4/5 border-gray-400 m-auto my-7"></div>
-
       <p>Plan on processing more than that? You better contact our sales team</p>
       <button class="global-hover global-focus btn-blue mt-7 w-full font-normal">Contact sales</button>
     </div>
