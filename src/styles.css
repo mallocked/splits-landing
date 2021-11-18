@@ -20,9 +20,9 @@
   }
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 
 .tool-tip {
@@ -51,23 +51,9 @@ img:hover ~ .tool-tip, a:hover ~ .tool-tip {
   z-index: -1;
 }
 
-.rotate-4deg::before {
-  transform: rotate(4.7deg);
+.rotate::before {
+  transform: rotate(var(--rotation, 2.7deg));
 }
-
-.rotate-2deg::before {
-  transform: rotate(2.7deg);
-}
-
-
-.rotate-6deg::before {
-  transform: rotate(-5.75deg);
-}
-
-.rotate-3deg::before {
-  transform: rotate(-3.25deg);
-}
-
 
 .purple-bg::before {
   background-color: rgba(113, 106, 202, 0.05);

@@ -15,9 +15,12 @@
       <div class="text-white font-bold mr-2">
         <a href="#top"><img class="sm:w-40 w-28" src="./assets/ss-logo-full.svg" alt="sound splits company logo"></a>
       </div>
-      <button class="btn-blue global-focus global-hover border-white hover:border-white">+Waitlist</button>
+      <a href="#waitlist" class="lg:hidden block btn-blue global-focus global-hover border-white hover:border-white">+Waitlist</a>
+      <a href="login"
+        class="hidden lg:block btn-blue global-focus global-hover border-white hover:border-white">
+        Log in</a>
     </nav>
-    <div class="flex lg:flex-row items-center lg:items-start lg:justify-center lg:gap-9">
+    <div class="flex lg:flex-row items-center lg:mt-8 lg:items-start lg:justify-center lg:gap-9">
       <div class="hidden lg:block">
         <img src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard">
       </div>
@@ -43,7 +46,7 @@
     <path
       d="M-118.901 89.3817C-91.634 34.8477 -54.4782 93.9999 11 16.4999C76.4781 -61.0001 234.398 177.363 502.099 44.8819C552.752 19.8143 432 166.5 432 166.5L-31.9012 166.5C-31.9012 166.5 -144.176 139.932 -118.901 89.3817Z"/>
   </svg> -->
-    <svg viewBox="0 0 389 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 389 40" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M390 4.38472C299.752 -17.2291 175.431 49.377 -4.35291e-06 24.8957L-1.73097e-05 99L390 99.0001L390 4.38472Z"
         fill="white" />
@@ -54,9 +57,9 @@
       artists and songwriters.</p>
   </main>
 
-  <div class="lg:hidden flex flex-col m-7 items-center">
+  <div id="waitlist" class="lg:hidden flex flex-col m-7 mt-2 pt-5 items-center">
     <div class="border-2 py-5 max-w-md px-6 rounded-xl border-blue border-solid">
-      <p class="pb-3  self-stretch">Get in the know now, we’re launching soon.</p>
+      <p class="pb-3  self-stretch">Join the waitlist, we’re launching soon.</p>
       <form>
         <input class="block outline-none focus:ring-4 focus:ring-blue-100 border-2 rounded-md p-1 py-2 pl-2 border-blue-400 w-full mb-3" type="text"
           placeholder="Your email address">
@@ -66,32 +69,34 @@
   </div>
   
   <div class="flex flex-col items-center">
-    <aside class="mt-16 flex bg-blue-blob bg-no-repeat bg-contain py-12 bg-right-top max-w-sm">
-      <div class="pr-4"><img class="shadow-lg" src="./assets/artist-spotlight.jpg" alt="artist at soundboard"></div>
+    <aside class="mt-8 flex bg-blue-blob lg:items-center bg-no-repeat bg-contain lg:py-20 lg:px-18 py-4 bg-right-top max-w-sm lg:max-w-md">
+      <div class="pr-4"><img class="lg:border-4 lg:border-white lg:rounded-xl lg:w-full shadow-lg" src="./assets/artist-spotlight.jpg" alt="artist at soundboard"></div>
       <div class="flex-1">
-        <p class="font-bold">Label spotlight</p>
-        <p class="pr-4 sm:pr-12">United Pursuit Records dealt with convoluted spreadsheet solutions for over a decade
-          before finding Sound
-          Splits-- it was a perfect match.</p>
+        <p class="text-xl lg:text-4xl lg:pb-2 font-bold">Label spotlight</p>
+        <p class="pr-4 lg:pr-0 sm:pr-12">
+          <span class="lg:hidden">For over 10 years United Pursuit Records dealt with convoluted spreadsheets to manage their royalties before finding Sound Splits.</span>
+          <span class="hidden lg:inline">
+            For over a decade United Pursuit Records dealt with convoluted spreadsheet solutions to manage their royalty accounting- now they save countless hours each month paying out their artists and publishers using Sound Splits.
+          </span>
+        </p>
       </div>
     </aside>
   </div>
 
 
-  <article class="mt-32 flex flex-col justify-center items-center">
+  <article class="mt-20 flex flex-col justify-center items-center">
     <h2 class="mx-7 text-center mb-3 font-bold text-2xl">How it works</h2>
-    <p class="text-center mx-7">Sound Splits makes royalty accounting straight forward.</p>
+    <p class="text-center mx-7">Sound Splits makes royalty accounting easy.</p>
 
-    <div class="text-left color-bg rotate-6deg purple-bg flex flex-col items-center pt-10 self-stretch px-7">
+    <div class="text-left color-bg rotate purple-bg flex flex-col items-center pt-10 self-stretch px-7" style="--rotation:2.7deg;">
       <picture>
         <img src="./assets/how-it-works-woman.png" alt="woman at desk">
       </picture>
       <h3 class="font-bold text-xl py-2">Add your catalog</h3>
-      <p class="mb-28 lg:mb-40 lg:max-w-xl">Add and manage your catalog of songs and albums, then add ownership splits for publishing and
-        masters.</p>
+      <p class="mb-28 lg:mb-40 lg:max-w-xl">Add your catalog of songs and albums along with ownership splits for publishing and masters.</p>
     </div>
 
-    <div class="self-stretch flex flex-col items-center px-7 my-20 lg:mb-16 lg:mt-12">
+    <div class="self-stretch flex flex-col items-center px-7 mt-9 lg:mb-16 lg:mt-12">
       <picture>
         <img src="./assets/how-it-works-man.png" alt="man at computer displaying charts">
       </picture>
@@ -99,18 +104,17 @@
       <p>Import your sales data from all your sales channels like Spotify, Tunecore, AppleMusic and more.</p>
     </div>
 
-    <div class="color-bg rotate-4deg green-bg flex flex-col items-center pt-10 self-stretch px-7">
+    <div class="color-bg rotate green-bg flex flex-col items-center mt-20 self-stretch px-7"  style="--rotation:-2.25deg;">
       <picture>
         <img src="./assets/how-it-works-yoga.png" alt="woman on yoga mat with computer">
       </picture>
-      <h3 class="font-bold text-xl py-4">Create beautiful reports</h3>
-      <p class="mb-28 lg:mb-40 lg:max-w-xl">Let Sound Splits do the hard work of calculating royalties for all your sales by generating
-        royalty reports.
+      <h3 class="font-bold text-xl py-2">Create beautiful reports</h3>
+      <p class="mb-28 lg:mb-40 lg:max-w-xl">Let Sound Splits do the hard work of calculating royalties for all your artists and publisher by generating royalty reports.
       </p>
     </div>
   </article>
 
-  <article class="text-center mt-24 flex flex-col items-center">
+  <article class="text-center mt-8 sm:mt-6 lg:mt-0 flex flex-col items-center">
     <h2 class="mb-3 font-bold text-2xl">Screenshots</h2>
     <p class="mx-7 mb-10">Take a look at Sound Splits in action</p>
 
@@ -170,7 +174,7 @@
     </div>
   </article>
   
-  <article class="text-center mx-7 mt-36 flex flex-col items-center">
+  <article class="text-center mx-7 mt-24 flex flex-col items-center">
     <h2 class="mb-3 font-bold text-2xl">Pricing</h2>
     <p class="mb-10">Free... Unless you’re wrecking our servers!</p>
     <!-- Pricing card -->
@@ -178,11 +182,11 @@
       <h3 class="font-bold text-2xl">Sound Splits is free to use up to 1 million monthly imported sales units.</h3>
       <div class="border-solid border-t w-4/5 border-gray-400 m-auto my-7"></div>
       <p>Plan on processing more than that? You better contact our sales team</p>
-      <button class="global-hover global-focus btn-blue mt-7 w-full font-normal">Contact sales</button>
+      <a href="mailto:soundsplits@gmail.com" class="block global-hover global-focus btn-blue mt-7 w-full font-normal">Contact sales</a>
     </div>
   </article>
 
-  <article class="mx-7 text-center mt-28 flex flex-col items-center">
+  <article class="mx-7 text-center sm:mt-12 mt-16 mb-8 flex flex-col items-center">
     <h2 class="m-7 text-center mb-3 font-bold text-2xl">Meet the team</h2>
     <p class="mb-10 max-w-md">Sound Splits is built and maintained by Mallocked, LLC. A software company created by
       passionate,
@@ -192,14 +196,14 @@
       <picture class="flex flex-col justify-center m-3 relative">
         <img class="rounded-full border-4 border-white shadow-md hover:opacity-90 cursor-pointer"
           src="./assets/meet-the-team-james.png" alt="James, principle backend developer">
-        <p class="tool-tip top-32 text-sm mt-4 p-2 rounded-md text-white opacity-0 bg-black bg-opacity-50 shadow-md">
+        <p class="tool-tip sm:top-32 top-28 text-sm mt-4 p-2 rounded-md text-white opacity-0 bg-black bg-opacity-50 shadow-md">
           James, principle back end developer
         </p>
       </picture>
       <picture class="flex flex-col justify-center m-4 relative">
         <img class="rounded-full border-4 border-white shadow-md hover:opacity-90 cursor-pointer"
           src="./assets/meet-the-team-michael.png" alt="Michael, principle frontend developer">
-        <p class="tool-tip top-32 text-sm mt-4 p-2 rounded-md text-white opacity-0 bg-black bg-opacity-50 shadow-md">
+        <p class="tool-tip sm:top-32 top-28 text-sm mt-4 p-2 rounded-md text-white opacity-0 bg-black bg-opacity-50 shadow-md">
           Michael, principle front end developer
         </p>
 
@@ -207,7 +211,7 @@
     </div>
   </article>
 
-  <footer class="text-center text-white bg-footer bg-cover bg-no-repeat bg-bottom sm:bg-right-bottom xl:bg-right-top">
+  <footer class="text-center text-white bg-footer bg-cover bg-no-repeat bg-bottom sm:bg-right-bottom">
     <svg viewBox="0 40 389 99" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 94.6153C90.2479 116.229 214.569 49.6231 390 74.1043V0H0V94.6153Z" fill="white" />
     </svg>
