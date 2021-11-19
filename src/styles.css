@@ -31,7 +31,10 @@
   position: absolute;
 }
 
-img:hover ~ .tool-tip, a:hover ~ .tool-tip {
+img:hover~.tool-tip,
+img:focus~.tool-tip,
+a:hover~.tool-tip,
+a:focus~.tool-tip {
   opacity: 100;
 }
 

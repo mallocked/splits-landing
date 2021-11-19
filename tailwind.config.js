@@ -10,7 +10,7 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         blue: {
-          light: '#85d7ff',
+          light: '#93D3F2',
           DEFAULT: '#1872E4',
           dark: '#009eeb',
           tenPercent: 'rgba(24, 114, 228, 0.10)',
@@ -27,6 +27,7 @@ module.exports = {
         'blue-blob': "url('./assets/artist-spotlight-blob.png')",
         'header': "url('./assets/bg-header.svg')",
         'header-lg': "url('./assets/bg-header-lg.svg')",
+        'gradiant': "url('./assets/bg-gradiant.svg')",
         'footer': "url('./assets/bg-footer.svg')"
       }
     },
