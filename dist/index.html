@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sound Splits - SaaS Royalty accounting for indie labels and publishers</title>
   <link href="./styles.css" rel="stylesheet">
-  <script defer src="tabs.js"></script>
+  <script defer src="./tabs.js"></script>
+  <script defer src="./gallery/imageGallery.js"></script>
 </head>
 
 <body>
   <header id="top" class="bg-header bg-cover bg-no-repeat bg-center lg:bg-bottom lg:bg-gradiant">
-    <nav class="flex flex-row p-7 md:px-11 justify-between items-center">
+    <nav class="flex flex-row p-4 sm:p-7 md:px-11 justify-between items-center">
       <div class="text-white font-bold mr-2">
         <a href="#top"><img class="sm:w-40 w-28" src="./assets/ss-logo-full.svg" alt="sound splits company logo"></a>
       </div>
@@ -76,7 +77,7 @@
 
   <div class="flex flex-col items-center">
     <aside
-      class="mt-8 flex bg-blue-blob lg:items-center bg-no-repeat bg-contain lg:py-20 lg:px-18 py-4 bg-right-top max-w-sm lg:max-w-md">
+      class="mt-8 flex flex- bg-blue-blob lg:items-center bg-no-repeat bg-contain lg:py-20 lg:px-18 py-4 bg-right-top max-w-sm lg:max-w-md">
       <div class="pr-4"><img class="lg:border-4 lg:border-white lg:rounded-xl lg:w-full shadow-lg"
           src="./assets/artist-spotlight.jpg" alt="artist at soundboard"></div>
       <div class="flex-1">
@@ -133,62 +134,15 @@
     <h2 class="mb-3 font-bold text-2xl">Screenshots</h2>
     <p class="mx-7 mb-10">Take a look at Sound Splits in action</p>
 
-    <div id="imageContainer" class="p-6 mb-3 bg-blue bg-opacity-5 border-t-2 border-b-2 border-blue">
-      <!-- Tab Panels -->
-      <div role="tabpanel" id="screenshot1-tab">
-        <div class="flex flex-row justify-evenly items-center">
-          <div class="max-w-lg select-none">
-            <img class="shadow-md pointer-events-none" src="./assets/screenshot3.jpg" alt="Sound Splits user dashboard">
-          </div>
-          <div class="text-left ml-6 self-center">
-            <h4 class="font-bold text-lg select-none">Account dashboard</h4>
-            <p class="text-sm select-none">Glimpse recent revenue, reports and statements</p>
-          </div>
-        </div>
-      </div>
-
-      <div hidden id="screenshot2-tab" role="tabpanel">
-        <div class="flex flex-row justify-evenly items-center">
-          <div class="max-w-lg select-none"><img class="pointer-events-none" src="./assets/screenshot2.jpg" alt="Sound Splits user dashboard"></div>
-          <div class="flex-1 text-left ml-6 self-center">
-            <h4 class="font-bold text-lg select-none">Upsidedown world</h4>
-            <p class="text-sm select-none">Glimpse the underworld in this epic saga</p>
-          </div>
-        </div>
-      </div>
-
-      <div hidden role="tabpanel" id="screenshot3-tab">
-        <div class="flex flex-row justify-evenly items-center">
-          <div class="max-w-lg select-none"><img class="pointer-events-none" src="./assets/screenshot1.jpg" alt="Sound Splits user dashboard"></div>
-          <div class="flex-1 text-left ml-6 self-center">
-            <h4 class="font-bold text-lg select-none">Third is an option</h4>
-            <p class="text-sm select-none">A third way to live is a middle road of the ways</p>
-          </div>
-        </div>
-      </div>
-
-      <div hidden id="screenshot4-tab" role="tabpanel">
-        <div class="flex flex-row justify-evenly items-center">
-          <div class="max-w-lg select-none"><img class="pointer-events-none" src="./assets/screenshot2.jpg" alt="Sound Splits user dashboard"></div>
-          <div class="flex-1 text-left ml-6 self-center">
-            <h4 class="font-bold text-lg select-none">Fourth is the charm</h4>
-            <p class="text-sm select-none">This world just can't get anymore repeated!</p>
-          </div>
-        </div>
-      </div>
+    <!-- Image Tab Panels -->
+    <div id="imageContainer"
+      class="p-6 mb-3 min-w-full lg:min-w-0 bg-blue bg-opacity-5 border-t-2 border-b-2 border-blue">
     </div>
 
     <!-- Tabs -->
     <div id="imageTabs" role="tablist" class="dot-indicators flex global-focus"
       aria-label="screenshot gallery selector list">
-      <button role="tab" tabindex="0" aria-selected="true" aria-controls="screenshot1-tab"><span
-          class="sr-only">Screenshot 1</span></button>
-      <button role="tab" tabindex="0" aria-selected="false" aria-controls="screenshot2-tab"><span
-          class="sr-only">Screenshot 2</span></button>
-      <button role="tab" tabindex="0" aria-selected="false" aria-controls="screenshot3-tab"><span
-          class="sr-only">Screenshot 3</span></button>
-      <button role="tab" class="mr-0" tabindex="0" aria-selected="false" aria-controls="screenshot4-tab"><span
-          class="sr-only">Screenshot 4</span></button>
+
     </div>
   </article>
 
