@@ -65,3 +65,12 @@ a:focus~.tool-tip {
 .green-bg::before {
   background-color: rgba(16, 120, 85, 0.05);
 }
+
+main a {
+  @apply text-blue;
+  text-decoration: underline;
+}
+
+main a:hover {
+  text-decoration: none;
+}
