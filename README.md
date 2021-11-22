@@ -1,6 +1,8 @@
 # SoundSplits.com front page
 *This one is still in-progress but I want you to be able to follow along so I've added some screenshots from the UI design phase.*
 
+[Live site is available here](https://mallocked.github.io/splits-landing/dist/index.html)
+
  I partnered with [Zac Rogers](https://github.com/ZacRogersWorks) to put this design together. Zac is a talented UX/UI designer who ran user interviews, created cards, built profiles and brought intentionality to each of the UI/UX decisions. We both riffed on designs and in the end we landed on this one that I put together:
 
 ![](./sound-splits-open-graph.jpg)
